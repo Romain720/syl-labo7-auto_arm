@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project integrity="ca686bf3fcc6dbfa23a7998fd015503a9395b53e" source="2.16.8.t" version="1.0">
+<project integrity="cc7cc6fd78d32b5b0455be427be329c1e015e0ae" source="2.16.8.t" version="1.0">
   This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
 
   <lib desc="#Wiring" name="0">
@@ -350,7 +350,6 @@ end TCL_Generic;
     <wire from="(810,220)" to="(810,240)"/>
     <wire from="(720,180)" to="(830,180)"/>
     <wire from="(480,330)" to="(480,360)"/>
-    <wire from="(230,310)" to="(270,310)"/>
     <wire from="(540,330)" to="(540,350)"/>
     <wire from="(250,360)" to="(480,360)"/>
     <wire from="(250,250)" to="(480,250)"/>
@@ -363,6 +362,7 @@ end TCL_Generic;
     <wire from="(270,310)" to="(270,350)"/>
     <wire from="(800,260)" to="(830,260)"/>
     <wire from="(290,150)" to="(760,150)"/>
+    <wire from="(250,310)" to="(270,310)"/>
     <wire from="(760,200)" to="(830,200)"/>
     <wire from="(290,310)" to="(300,310)"/>
     <wire from="(270,350)" to="(540,350)"/>
@@ -485,7 +485,8 @@ end TCL_Generic;
       <a name="uuid" val="3d5f58a2-4041-4681-be69-4619e1c5316d"/>
       <a name="integrity" val="a8ab885841d9710dab7c32ceee49ea29cee42705"/>
     </comp>
-    <comp lib="0" loc="(230,310)" name="Pin">
+    <comp loc="(480,290)" name="timer"/>
+    <comp lib="0" loc="(250,310)" name="Pin">
       <a name="label" val="clk_i"/>
       <a name="owner" val="trr"/>
       <a name="date" val="14.12.23 14:34:36"/>
@@ -493,7 +494,6 @@ end TCL_Generic;
       <a name="uuid" val="9d55f745-516a-4071-80da-89c7eacf6295"/>
       <a name="integrity" val="04ee1b054f9b2d2428f89b0894375a214c5a8a90"/>
     </comp>
-    <comp loc="(480,290)" name="timer"/>
     <comp lib="7" loc="(4,50)" name="Text" trackercomp="true">
       <a name="text" val="Attention, votre version de Logisim"/>
       <a name="font" val="SansSerif plain 48"/>
@@ -1484,7 +1484,9 @@ end TCL_Generic;
     <a name="circuitnamedbox" val="true"/>
     <a name="circuitvhdlpath" val=""/>
     <wire from="(480,200)" to="(730,200)"/>
+    <wire from="(780,130)" to="(780,140)"/>
     <wire from="(300,220)" to="(300,290)"/>
+    <wire from="(730,130)" to="(780,130)"/>
     <wire from="(390,210)" to="(390,220)"/>
     <wire from="(390,200)" to="(390,210)"/>
     <wire from="(280,260)" to="(280,280)"/>
@@ -1496,6 +1498,7 @@ end TCL_Generic;
     <wire from="(500,230)" to="(730,230)"/>
     <wire from="(280,280)" to="(500,280)"/>
     <wire from="(510,240)" to="(730,240)"/>
+    <wire from="(730,130)" to="(730,170)"/>
     <wire from="(750,170)" to="(770,170)"/>
     <wire from="(280,220)" to="(300,220)"/>
     <wire from="(350,210)" to="(370,210)"/>
@@ -1503,6 +1506,7 @@ end TCL_Generic;
     <wire from="(390,210)" to="(730,210)"/>
     <wire from="(300,290)" to="(510,290)"/>
     <wire from="(460,240)" to="(480,240)"/>
+    <wire from="(800,160)" to="(830,160)"/>
     <wire from="(480,200)" to="(480,240)"/>
     <wire from="(240,240)" to="(260,240)"/>
     <wire from="(350,270)" to="(490,270)"/>
@@ -1513,6 +1517,8 @@ end TCL_Generic;
     <wire from="(280,190)" to="(730,190)"/>
     <wire from="(280,260)" to="(410,260)"/>
     <wire from="(280,180)" to="(730,180)"/>
+    <wire from="(280,170)" to="(730,170)"/>
+    <wire from="(760,150)" to="(770,150)"/>
     <wire from="(280,210)" to="(350,210)"/>
     <comp lib="0" loc="(240,240)" name="Pin">
       <a name="width" val="7"/>
@@ -1532,17 +1538,39 @@ end TCL_Generic;
       <a name="uuid" val="6008fb96-2914-46f6-96c7-744acc09cdcd"/>
       <a name="integrity" val="2f0078f1403fb4722fe2c03602dac13fff059504"/>
     </comp>
+    <comp lib="1" loc="(460,240)" name="OR Gate">
+      <a name="inputs" val="3"/>
+      <a name="owner" val="hruni_khelfi"/>
+      <a name="date" val="24.01.25 15:56:43"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="0db68192-a629-48c3-b8f2-d05b702905cc"/>
+      <a name="integrity" val="24ed2a3a2ef6abe0522e49b41019ebc172dcd2cb"/>
+    </comp>
     <comp lib="0" loc="(750,170)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="fanout" val="7"/>
       <a name="incoming" val="7"/>
       <a name="owner" val="hruni_khelfi"/>
-      <a name="date" val="24.01.25 15:55:40"/>
+      <a name="date" val="24.01.25 15:53:56"/>
       <a name="version" val="2.16.8.t"/>
-      <a name="uuid" val="7492d3b8-4ce9-4c35-856c-281460ae0f94"/>
-      <a name="integrity" val="204c09edce646d262504f01d93eb41bff945f023"/>
+      <a name="uuid" val="ee6a4d12-7c04-4557-86ee-7c7389d8bbb2"/>
+      <a name="integrity" val="4f6eb3c5576bda6657dfbe943bb29cbaa709f1ab"/>
     </comp>
-    <comp lib="0" loc="(770,170)" name="Pin">
+    <comp lib="2" loc="(800,160)" name="Multiplexer">
+      <a name="selloc" val="tr"/>
+      <a name="width" val="7"/>
+      <a name="enable" val="false"/>
+      <a name="owner" val="hruni_khelfi"/>
+      <a name="date" val="24.01.25 16:51:07"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="dad8b6f6-d4d7-4138-9990-2374c21d9807"/>
+      <a name="integrity" val="fd962e399602a2b7c76e3604a76c53eff8962dae"/>
+    </comp>
+    <comp lib="0" loc="(760,150)" name="Constant">
+      <a name="width" val="7"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(830,160)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="7"/>
@@ -1553,14 +1581,6 @@ end TCL_Generic;
       <a name="version" val="2.16.8.t"/>
       <a name="uuid" val="ce06e181-a402-4c01-9299-c261c9ec62d4"/>
       <a name="integrity" val="cc652f2fbb8d1ba6f751ec628b6e8088e0431674"/>
-    </comp>
-    <comp lib="1" loc="(460,240)" name="OR Gate">
-      <a name="inputs" val="3"/>
-      <a name="owner" val="hruni_khelfi"/>
-      <a name="date" val="24.01.25 15:56:43"/>
-      <a name="version" val="2.16.8.t"/>
-      <a name="uuid" val="0db68192-a629-48c3-b8f2-d05b702905cc"/>
-      <a name="integrity" val="24ed2a3a2ef6abe0522e49b41019ebc172dcd2cb"/>
     </comp>
     <comp lib="7" loc="(4,50)" name="Text" trackercomp="true">
       <a name="text" val="Attention, votre version de Logisim"/>
